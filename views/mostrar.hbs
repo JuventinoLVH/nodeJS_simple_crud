@@ -1,8 +1,9 @@
 <h2 class="landing landing__api-title">
     <img src="/dependency.svg" />
-    Usuarios registrados
+    Peliculas registrados
     <img src="/dependency.svg" />
 </h2>
+
 <div clss="container-table">
 <table>
     <thead>
@@ -13,7 +14,6 @@
             <th>Cast</th>
             <th>Lenguajes</th>
             <th>Directores</th>
-            <th>Premios</th>
         </tr>
     </thead>
     <tbody>
@@ -25,9 +25,10 @@
             <td>{{this.cast}}</td>
             <td>{{this.languages}}</td>
             <td>{{this.directors}}</td>
-            <td>{{this.awards.wins}}</td>
+            <td><a href="/editar{{this._id}}"><button>Editar</button></a></td>
         </tr>
       {{/each}}
     </tbody>
 </table>
+<a href="/registrar"><button>Registrar</button></a>
 </div">

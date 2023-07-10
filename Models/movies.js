@@ -8,7 +8,6 @@ const movieSchema = new Schema({
     cast: Object,
     languages: Object,
     directors: Object,
-    awards: Object
 })
 
 const Movie = mongoose.model("movie",movieSchema);

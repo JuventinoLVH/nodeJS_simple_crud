@@ -1,15 +1,70 @@
 <h2 class="landing landing__api-title">
     <img src="/secured.svg" />
-    Registrar nuevo usuario
+    Registrar nueva pelicula
     <img src="/secured.svg" />
 </h2>
 
-<div class="landing__hero">
-    <ul class="list">
-        {{#dependencies}}
-        <li>
-            {{name}} <span class="version">{{version}}</span>
-        </li>
-        {{/dependencies}}
-    </ul>
+<div class="container-table" >
+    <h3>
+        <form class="form" action="/registrar"method="POST">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <input type="text" 
+                    placeholder=Titulo
+                    name=title
+                    >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <input type="text"
+                    placeholder=Clasificación
+                    name=rated
+                    >
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <input type="date"
+                    placeholder=Año
+                    name=year
+                    >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <input type="text"
+                    placeholder=Casting
+                    name=cast
+                    >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <input type="text"
+                    placeholder=Lenguajes
+                    name=languages
+                    >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <input type="text"
+                    placeholder=Directores
+                    name=directors
+                    >
+                    </td>
+                </tr>
+            </tbody>
+        </table>           
+            <button class="btn btn-succes btn-block">Agregar</button>
+        </form>
+    </h3>
 </div>
