@@ -1,0 +1,33 @@
+<h2 class="landing landing__api-title">
+    <img src="/dependency.svg" />
+    Usuarios registrados
+    <img src="/dependency.svg" />
+</h2>
+<div clss="container-table">
+<table>
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Clasificación</th>
+            <th>Año de estreno</th>
+            <th>Cast</th>
+            <th>Lenguajes</th>
+            <th>Directores</th>
+            <th>Premios</th>
+        </tr>
+    </thead>
+    <tbody>
+      {{#each movies}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.rated}}</td>
+            <td>{{this.year}}</td>
+            <td>{{this.cast}}</td>
+            <td>{{this.languages}}</td>
+            <td>{{this.directors}}</td>
+            <td>{{this.awards.wins}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+</table>
+</div">
